@@ -1,0 +1,6 @@
+framework module Pods_OlaApp {
+  umbrella header "Pods-OlaApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

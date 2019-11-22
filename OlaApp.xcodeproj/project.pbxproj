@@ -1,0 +1,928 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08DDD11E2388362700A4A606 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD11D2388362700A4A606 /* AppDelegate.swift */; };
+		08DDD1202388362700A4A606 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD11F2388362700A4A606 /* SceneDelegate.swift */; };
+		08DDD1252388362700A4A606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DDD1232388362700A4A606 /* Main.storyboard */; };
+		08DDD1272388362A00A4A606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08DDD1262388362A00A4A606 /* Assets.xcassets */; };
+		08DDD12A2388362A00A4A606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DDD1282388362A00A4A606 /* LaunchScreen.storyboard */; };
+		08DDD1352388362A00A4A606 /* OlaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD1342388362A00A4A606 /* OlaAppTests.swift */; };
+		08DDD1402388362A00A4A606 /* OlaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD13F2388362A00A4A606 /* OlaAppUITests.swift */; };
+		08DDD15F23883A5F00A4A606 /* BaseDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD15723883A5F00A4A606 /* BaseDataHandler.swift */; };
+		08DDD16123883A5F00A4A606 /* BaseAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD15A23883A5F00A4A606 /* BaseAPIHandler.swift */; };
+		08DDD16323883A5F00A4A606 /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD15D23883A5F00A4A606 /* BaseVM.swift */; };
+		08DDD16523883AB200A4A606 /* TaxiListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD16423883AB200A4A606 /* TaxiListVC.swift */; };
+		08DDD16723883B1F00A4A606 /* TaxiListDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD16623883B1F00A4A606 /* TaxiListDataHandler.swift */; };
+		08DDD16923883B6500A4A606 /* TaxiListAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD16823883B6500A4A606 /* TaxiListAPIHandler.swift */; };
+		08DDD16B23883BBD00A4A606 /* TaxiListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD16A23883BBD00A4A606 /* TaxiListVM.swift */; };
+		08DDD16F23883C2200A4A606 /* Taxi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD16E23883C2200A4A606 /* Taxi.swift */; };
+		08DDD1762388408F00A4A606 /* TaxiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD1752388408F00A4A606 /* TaxiTableViewCell.swift */; };
+		08DDD1832388410E00A4A606 /* OlaAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD17F2388410D00A4A606 /* OlaAppConstants.swift */; };
+		08DDD1842388410E00A4A606 /* OlaAppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD1802388410D00A4A606 /* OlaAppExtensions.swift */; };
+		08DDD1852388410E00A4A606 /* OlaAppLicense.txt in Resources */ = {isa = PBXBuildFile; fileRef = 08DDD1812388410D00A4A606 /* OlaAppLicense.txt */; };
+		08DDD1862388410E00A4A606 /* OlaAppEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD1822388410E00A4A606 /* OlaAppEnum.swift */; };
+		08DDD1892388430500A4A606 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD1882388430500A4A606 /* NetworkManager.swift */; };
+		08DDD18E2388448800A4A606 /* CoreDataManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD18D2388448800A4A606 /* CoreDataManagers.swift */; };
+		08DDD1912388496300A4A606 /* OlaApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD18F2388496300A4A606 /* OlaApp.xcdatamodeld */; };
+		08DDD1B02388503900A4A606 /* Taxi+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD1AA2388503900A4A606 /* Taxi+CoreDataClass.swift */; };
+		08DDD1B12388503900A4A606 /* Taxi+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD1AB2388503900A4A606 /* Taxi+CoreDataProperties.swift */; };
+		08DDD1B22388503900A4A606 /* TaxiDetails+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD1AC2388503900A4A606 /* TaxiDetails+CoreDataClass.swift */; };
+		08DDD1B32388503900A4A606 /* TaxiDetails+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD1AD2388503900A4A606 /* TaxiDetails+CoreDataProperties.swift */; };
+		08DDD1B42388503900A4A606 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD1AE2388503900A4A606 /* Location+CoreDataClass.swift */; };
+		08DDD1B52388503900A4A606 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD1AF2388503900A4A606 /* Location+CoreDataProperties.swift */; };
+		23A333CC11DA37E93FD9960C /* Pods_OlaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2431E7598A8F443525D87392 /* Pods_OlaApp.framework */; };
+		309924305AC25669239C2C44 /* Pods_OlaApp_OlaAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D754EB85158552AF694EBCD /* Pods_OlaApp_OlaAppUITests.framework */; };
+		C9377F39D8402C84B6DDAB4B /* Pods_OlaAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1E501CF82CBB3665E5456D /* Pods_OlaAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08DDD1312388362A00A4A606 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08DDD1122388362700A4A606 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08DDD1192388362700A4A606;
+			remoteInfo = OlaApp;
+		};
+		08DDD13C2388362A00A4A606 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08DDD1122388362700A4A606 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08DDD1192388362700A4A606;
+			remoteInfo = OlaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0685D30D1795C43CE419B5F8 /* Pods-OlaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OlaApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-OlaApp/Pods-OlaApp.release.xcconfig"; sourceTree = "<group>"; };
+		08DDD11A2388362700A4A606 /* OlaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OlaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08DDD11D2388362700A4A606 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08DDD11F2388362700A4A606 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		08DDD1242388362700A4A606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08DDD1262388362A00A4A606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08DDD1292388362A00A4A606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08DDD12B2388362A00A4A606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08DDD1302388362A00A4A606 /* OlaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OlaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08DDD1342388362A00A4A606 /* OlaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlaAppTests.swift; sourceTree = "<group>"; };
+		08DDD1362388362A00A4A606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08DDD13B2388362A00A4A606 /* OlaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OlaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08DDD13F2388362A00A4A606 /* OlaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlaAppUITests.swift; sourceTree = "<group>"; };
+		08DDD1412388362A00A4A606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08DDD15723883A5F00A4A606 /* BaseDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDataHandler.swift; sourceTree = "<group>"; };
+		08DDD15A23883A5F00A4A606 /* BaseAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPIHandler.swift; sourceTree = "<group>"; };
+		08DDD15D23883A5F00A4A606 /* BaseVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
+		08DDD16423883AB200A4A606 /* TaxiListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiListVC.swift; sourceTree = "<group>"; };
+		08DDD16623883B1F00A4A606 /* TaxiListDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiListDataHandler.swift; sourceTree = "<group>"; };
+		08DDD16823883B6500A4A606 /* TaxiListAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiListAPIHandler.swift; sourceTree = "<group>"; };
+		08DDD16A23883BBD00A4A606 /* TaxiListVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiListVM.swift; sourceTree = "<group>"; };
+		08DDD16E23883C2200A4A606 /* Taxi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Taxi.swift; sourceTree = "<group>"; };
+		08DDD1752388408F00A4A606 /* TaxiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiTableViewCell.swift; sourceTree = "<group>"; };
+		08DDD17F2388410D00A4A606 /* OlaAppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OlaAppConstants.swift; sourceTree = "<group>"; };
+		08DDD1802388410D00A4A606 /* OlaAppExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OlaAppExtensions.swift; sourceTree = "<group>"; };
+		08DDD1812388410D00A4A606 /* OlaAppLicense.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OlaAppLicense.txt; sourceTree = "<group>"; };
+		08DDD1822388410E00A4A606 /* OlaAppEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OlaAppEnum.swift; sourceTree = "<group>"; };
+		08DDD1882388430500A4A606 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		08DDD18D2388448800A4A606 /* CoreDataManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagers.swift; sourceTree = "<group>"; };
+		08DDD1902388496300A4A606 /* OlaApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OlaApp.xcdatamodel; sourceTree = "<group>"; };
+		08DDD1AA2388503900A4A606 /* Taxi+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Taxi+CoreDataClass.swift"; sourceTree = "<group>"; };
+		08DDD1AB2388503900A4A606 /* Taxi+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Taxi+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		08DDD1AC2388503900A4A606 /* TaxiDetails+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaxiDetails+CoreDataClass.swift"; sourceTree = "<group>"; };
+		08DDD1AD2388503900A4A606 /* TaxiDetails+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaxiDetails+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		08DDD1AE2388503900A4A606 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
+		08DDD1AF2388503900A4A606 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		122261CC1FA7C08516C633BC /* Pods-OlaApp-OlaAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OlaApp-OlaAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OlaApp-OlaAppUITests/Pods-OlaApp-OlaAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2431E7598A8F443525D87392 /* Pods_OlaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OlaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D3EA81D38C9789A0708E98 /* Pods-OlaApp-OlaAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OlaApp-OlaAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OlaApp-OlaAppUITests/Pods-OlaApp-OlaAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5441E9F6BD2D7B7803C0D2F2 /* Pods-OlaAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OlaAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OlaAppTests/Pods-OlaAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D754EB85158552AF694EBCD /* Pods_OlaApp_OlaAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OlaApp_OlaAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B1E501CF82CBB3665E5456D /* Pods_OlaAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OlaAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E7910F98B6CDAD55D5EB4B2 /* Pods-OlaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OlaApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OlaApp/Pods-OlaApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AC2C3F448C8C8D07D2E7E9E9 /* Pods-OlaAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OlaAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OlaAppTests/Pods-OlaAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08DDD1172388362700A4A606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A333CC11DA37E93FD9960C /* Pods_OlaApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08DDD12D2388362A00A4A606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9377F39D8402C84B6DDAB4B /* Pods_OlaAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08DDD1382388362A00A4A606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309924305AC25669239C2C44 /* Pods_OlaApp_OlaAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02E0C4AC1EBF146154054615 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2431E7598A8F443525D87392 /* Pods_OlaApp.framework */,
+				5D754EB85158552AF694EBCD /* Pods_OlaApp_OlaAppUITests.framework */,
+				7B1E501CF82CBB3665E5456D /* Pods_OlaAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08DDD1112388362700A4A606 = {
+			isa = PBXGroup;
+			children = (
+				08DDD11C2388362700A4A606 /* OlaApp */,
+				08DDD1332388362A00A4A606 /* OlaAppTests */,
+				08DDD13E2388362A00A4A606 /* OlaAppUITests */,
+				08DDD11B2388362700A4A606 /* Products */,
+				8537AA6C3E0D180725847E24 /* Pods */,
+				02E0C4AC1EBF146154054615 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		08DDD11B2388362700A4A606 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08DDD11A2388362700A4A606 /* OlaApp.app */,
+				08DDD1302388362A00A4A606 /* OlaAppTests.xctest */,
+				08DDD13B2388362A00A4A606 /* OlaAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08DDD11C2388362700A4A606 /* OlaApp */ = {
+			isa = PBXGroup;
+			children = (
+				08DDD187238842D100A4A606 /* NetWorkManager */,
+				08DDD17223883F3D00A4A606 /* Views */,
+				08DDD14F2388365500A4A606 /* ViewController */,
+				08DDD1502388366600A4A606 /* ViewModel */,
+				08DDD14E2388364C00A4A606 /* Model */,
+				08DDD1512388367200A4A606 /* Utilities */,
+				08DDD11D2388362700A4A606 /* AppDelegate.swift */,
+				08DDD11F2388362700A4A606 /* SceneDelegate.swift */,
+				08DDD1232388362700A4A606 /* Main.storyboard */,
+				08DDD1262388362A00A4A606 /* Assets.xcassets */,
+				08DDD1282388362A00A4A606 /* LaunchScreen.storyboard */,
+				08DDD12B2388362A00A4A606 /* Info.plist */,
+			);
+			path = OlaApp;
+			sourceTree = "<group>";
+		};
+		08DDD1332388362A00A4A606 /* OlaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				08DDD1342388362A00A4A606 /* OlaAppTests.swift */,
+				08DDD1362388362A00A4A606 /* Info.plist */,
+			);
+			path = OlaAppTests;
+			sourceTree = "<group>";
+		};
+		08DDD13E2388362A00A4A606 /* OlaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08DDD13F2388362A00A4A606 /* OlaAppUITests.swift */,
+				08DDD1412388362A00A4A606 /* Info.plist */,
+			);
+			path = OlaAppUITests;
+			sourceTree = "<group>";
+		};
+		08DDD14E2388364C00A4A606 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				08DDD1AA2388503900A4A606 /* Taxi+CoreDataClass.swift */,
+				08DDD1AB2388503900A4A606 /* Taxi+CoreDataProperties.swift */,
+				08DDD1AC2388503900A4A606 /* TaxiDetails+CoreDataClass.swift */,
+				08DDD1AD2388503900A4A606 /* TaxiDetails+CoreDataProperties.swift */,
+				08DDD1AE2388503900A4A606 /* Location+CoreDataClass.swift */,
+				08DDD1AF2388503900A4A606 /* Location+CoreDataProperties.swift */,
+				08DDD16E23883C2200A4A606 /* Taxi.swift */,
+				08DDD18F2388496300A4A606 /* OlaApp.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		08DDD14F2388365500A4A606 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				08DDD16423883AB200A4A606 /* TaxiListVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		08DDD1502388366600A4A606 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				08DDD18C2388447100A4A606 /* Managers */,
+				08DDD15423883A5F00A4A606 /* Handlers */,
+				08DDD15B23883A5F00A4A606 /* ViewModels */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		08DDD1512388367200A4A606 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				08DDD17F2388410D00A4A606 /* OlaAppConstants.swift */,
+				08DDD1822388410E00A4A606 /* OlaAppEnum.swift */,
+				08DDD1802388410D00A4A606 /* OlaAppExtensions.swift */,
+				08DDD1812388410D00A4A606 /* OlaAppLicense.txt */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		08DDD15423883A5F00A4A606 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				08DDD15523883A5F00A4A606 /* DataHandlers */,
+				08DDD15823883A5F00A4A606 /* APIHandlers */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		08DDD15523883A5F00A4A606 /* DataHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				08DDD16623883B1F00A4A606 /* TaxiListDataHandler.swift */,
+				08DDD15723883A5F00A4A606 /* BaseDataHandler.swift */,
+			);
+			path = DataHandlers;
+			sourceTree = "<group>";
+		};
+		08DDD15823883A5F00A4A606 /* APIHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				08DDD16823883B6500A4A606 /* TaxiListAPIHandler.swift */,
+				08DDD15A23883A5F00A4A606 /* BaseAPIHandler.swift */,
+			);
+			path = APIHandlers;
+			sourceTree = "<group>";
+		};
+		08DDD15B23883A5F00A4A606 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				08DDD16A23883BBD00A4A606 /* TaxiListVM.swift */,
+				08DDD15D23883A5F00A4A606 /* BaseVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		08DDD17223883F3D00A4A606 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08DDD1752388408F00A4A606 /* TaxiTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		08DDD187238842D100A4A606 /* NetWorkManager */ = {
+			isa = PBXGroup;
+			children = (
+				08DDD1882388430500A4A606 /* NetworkManager.swift */,
+			);
+			path = NetWorkManager;
+			sourceTree = "<group>";
+		};
+		08DDD18C2388447100A4A606 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				08DDD18D2388448800A4A606 /* CoreDataManagers.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		8537AA6C3E0D180725847E24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E7910F98B6CDAD55D5EB4B2 /* Pods-OlaApp.debug.xcconfig */,
+				0685D30D1795C43CE419B5F8 /* Pods-OlaApp.release.xcconfig */,
+				49D3EA81D38C9789A0708E98 /* Pods-OlaApp-OlaAppUITests.debug.xcconfig */,
+				122261CC1FA7C08516C633BC /* Pods-OlaApp-OlaAppUITests.release.xcconfig */,
+				AC2C3F448C8C8D07D2E7E9E9 /* Pods-OlaAppTests.debug.xcconfig */,
+				5441E9F6BD2D7B7803C0D2F2 /* Pods-OlaAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08DDD1192388362700A4A606 /* OlaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08DDD1442388362A00A4A606 /* Build configuration list for PBXNativeTarget "OlaApp" */;
+			buildPhases = (
+				21E0741D66ED74847A52086A /* [CP] Check Pods Manifest.lock */,
+				08DDD1162388362700A4A606 /* Sources */,
+				08DDD1172388362700A4A606 /* Frameworks */,
+				08DDD1182388362700A4A606 /* Resources */,
+				20C323F70032ED8B6742D732 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OlaApp;
+			productName = OlaApp;
+			productReference = 08DDD11A2388362700A4A606 /* OlaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08DDD12F2388362A00A4A606 /* OlaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08DDD1472388362A00A4A606 /* Build configuration list for PBXNativeTarget "OlaAppTests" */;
+			buildPhases = (
+				F4AD30A62D0F913E50BD5E3B /* [CP] Check Pods Manifest.lock */,
+				08DDD12C2388362A00A4A606 /* Sources */,
+				08DDD12D2388362A00A4A606 /* Frameworks */,
+				08DDD12E2388362A00A4A606 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08DDD1322388362A00A4A606 /* PBXTargetDependency */,
+			);
+			name = OlaAppTests;
+			productName = OlaAppTests;
+			productReference = 08DDD1302388362A00A4A606 /* OlaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08DDD13A2388362A00A4A606 /* OlaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08DDD14A2388362A00A4A606 /* Build configuration list for PBXNativeTarget "OlaAppUITests" */;
+			buildPhases = (
+				CEE258B6C9E1F256D657B456 /* [CP] Check Pods Manifest.lock */,
+				08DDD1372388362A00A4A606 /* Sources */,
+				08DDD1382388362A00A4A606 /* Frameworks */,
+				08DDD1392388362A00A4A606 /* Resources */,
+				A727BB6FCD2E12697A1EDF79 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08DDD13D2388362A00A4A606 /* PBXTargetDependency */,
+			);
+			name = OlaAppUITests;
+			productName = OlaAppUITests;
+			productReference = 08DDD13B2388362A00A4A606 /* OlaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08DDD1122388362700A4A606 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Muneer KK";
+				TargetAttributes = {
+					08DDD1192388362700A4A606 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					08DDD12F2388362A00A4A606 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 08DDD1192388362700A4A606;
+					};
+					08DDD13A2388362A00A4A606 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 08DDD1192388362700A4A606;
+					};
+				};
+			};
+			buildConfigurationList = 08DDD1152388362700A4A606 /* Build configuration list for PBXProject "OlaApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08DDD1112388362700A4A606;
+			productRefGroup = 08DDD11B2388362700A4A606 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08DDD1192388362700A4A606 /* OlaApp */,
+				08DDD12F2388362A00A4A606 /* OlaAppTests */,
+				08DDD13A2388362A00A4A606 /* OlaAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08DDD1182388362700A4A606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08DDD12A2388362A00A4A606 /* LaunchScreen.storyboard in Resources */,
+				08DDD1272388362A00A4A606 /* Assets.xcassets in Resources */,
+				08DDD1252388362700A4A606 /* Main.storyboard in Resources */,
+				08DDD1852388410E00A4A606 /* OlaAppLicense.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08DDD12E2388362A00A4A606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08DDD1392388362A00A4A606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20C323F70032ED8B6742D732 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OlaApp/Pods-OlaApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FittedSheets/FittedSheets.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FittedSheets.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OlaApp/Pods-OlaApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21E0741D66ED74847A52086A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OlaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A727BB6FCD2E12697A1EDF79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OlaApp-OlaAppUITests/Pods-OlaApp-OlaAppUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FittedSheets/FittedSheets.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FittedSheets.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OlaApp-OlaAppUITests/Pods-OlaApp-OlaAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEE258B6C9E1F256D657B456 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OlaApp-OlaAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4AD30A62D0F913E50BD5E3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OlaAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08DDD1162388362700A4A606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08DDD16B23883BBD00A4A606 /* TaxiListVM.swift in Sources */,
+				08DDD16523883AB200A4A606 /* TaxiListVC.swift in Sources */,
+				08DDD18E2388448800A4A606 /* CoreDataManagers.swift in Sources */,
+				08DDD15F23883A5F00A4A606 /* BaseDataHandler.swift in Sources */,
+				08DDD11E2388362700A4A606 /* AppDelegate.swift in Sources */,
+				08DDD1B12388503900A4A606 /* Taxi+CoreDataProperties.swift in Sources */,
+				08DDD1912388496300A4A606 /* OlaApp.xcdatamodeld in Sources */,
+				08DDD1762388408F00A4A606 /* TaxiTableViewCell.swift in Sources */,
+				08DDD1B02388503900A4A606 /* Taxi+CoreDataClass.swift in Sources */,
+				08DDD16323883A5F00A4A606 /* BaseVM.swift in Sources */,
+				08DDD1B52388503900A4A606 /* Location+CoreDataProperties.swift in Sources */,
+				08DDD16123883A5F00A4A606 /* BaseAPIHandler.swift in Sources */,
+				08DDD16923883B6500A4A606 /* TaxiListAPIHandler.swift in Sources */,
+				08DDD16F23883C2200A4A606 /* Taxi.swift in Sources */,
+				08DDD1842388410E00A4A606 /* OlaAppExtensions.swift in Sources */,
+				08DDD16723883B1F00A4A606 /* TaxiListDataHandler.swift in Sources */,
+				08DDD1832388410E00A4A606 /* OlaAppConstants.swift in Sources */,
+				08DDD1892388430500A4A606 /* NetworkManager.swift in Sources */,
+				08DDD1202388362700A4A606 /* SceneDelegate.swift in Sources */,
+				08DDD1B22388503900A4A606 /* TaxiDetails+CoreDataClass.swift in Sources */,
+				08DDD1862388410E00A4A606 /* OlaAppEnum.swift in Sources */,
+				08DDD1B42388503900A4A606 /* Location+CoreDataClass.swift in Sources */,
+				08DDD1B32388503900A4A606 /* TaxiDetails+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08DDD12C2388362A00A4A606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08DDD1352388362A00A4A606 /* OlaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08DDD1372388362A00A4A606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08DDD1402388362A00A4A606 /* OlaAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08DDD1322388362A00A4A606 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08DDD1192388362700A4A606 /* OlaApp */;
+			targetProxy = 08DDD1312388362A00A4A606 /* PBXContainerItemProxy */;
+		};
+		08DDD13D2388362A00A4A606 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08DDD1192388362700A4A606 /* OlaApp */;
+			targetProxy = 08DDD13C2388362A00A4A606 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08DDD1232388362700A4A606 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08DDD1242388362700A4A606 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08DDD1282388362A00A4A606 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08DDD1292388362A00A4A606 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08DDD1422388362A00A4A606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08DDD1432388362A00A4A606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08DDD1452388362A00A4A606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E7910F98B6CDAD55D5EB4B2 /* Pods-OlaApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y89LU2A58Y;
+				INFOPLIST_FILE = OlaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Muneer.OlaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08DDD1462388362A00A4A606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0685D30D1795C43CE419B5F8 /* Pods-OlaApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y89LU2A58Y;
+				INFOPLIST_FILE = OlaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Muneer.OlaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		08DDD1482388362A00A4A606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC2C3F448C8C8D07D2E7E9E9 /* Pods-OlaAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y89LU2A58Y;
+				INFOPLIST_FILE = OlaAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Muneer.OlaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OlaApp.app/OlaApp";
+			};
+			name = Debug;
+		};
+		08DDD1492388362A00A4A606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5441E9F6BD2D7B7803C0D2F2 /* Pods-OlaAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y89LU2A58Y;
+				INFOPLIST_FILE = OlaAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Muneer.OlaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OlaApp.app/OlaApp";
+			};
+			name = Release;
+		};
+		08DDD14B2388362A00A4A606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49D3EA81D38C9789A0708E98 /* Pods-OlaApp-OlaAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y89LU2A58Y;
+				INFOPLIST_FILE = OlaAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Muneer.OlaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OlaApp;
+			};
+			name = Debug;
+		};
+		08DDD14C2388362A00A4A606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 122261CC1FA7C08516C633BC /* Pods-OlaApp-OlaAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y89LU2A58Y;
+				INFOPLIST_FILE = OlaAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Muneer.OlaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OlaApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08DDD1152388362700A4A606 /* Build configuration list for PBXProject "OlaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08DDD1422388362A00A4A606 /* Debug */,
+				08DDD1432388362A00A4A606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08DDD1442388362A00A4A606 /* Build configuration list for PBXNativeTarget "OlaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08DDD1452388362A00A4A606 /* Debug */,
+				08DDD1462388362A00A4A606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08DDD1472388362A00A4A606 /* Build configuration list for PBXNativeTarget "OlaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08DDD1482388362A00A4A606 /* Debug */,
+				08DDD1492388362A00A4A606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08DDD14A2388362A00A4A606 /* Build configuration list for PBXNativeTarget "OlaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08DDD14B2388362A00A4A606 /* Debug */,
+				08DDD14C2388362A00A4A606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		08DDD18F2388496300A4A606 /* OlaApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				08DDD1902388496300A4A606 /* OlaApp.xcdatamodel */,
+			);
+			currentVersion = 08DDD1902388496300A4A606 /* OlaApp.xcdatamodel */;
+			path = OlaApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 08DDD1122388362700A4A606 /* Project object */;
+}

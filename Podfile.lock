@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.9.0)
+  - FittedSheets (1.4.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - FittedSheets
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - FittedSheets
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  FittedSheets: 7f754c9f6fb4ea330cbc57c652b594255f2a6819
+
+PODFILE CHECKSUM: 08ad431e2cc3aefbeb98a14f43969c514ca18016
+
+COCOAPODS: 1.5.2

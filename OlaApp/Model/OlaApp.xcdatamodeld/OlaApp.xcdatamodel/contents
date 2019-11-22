@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="18G103" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Location" representedClassName=".Location" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Taxi" inverseName="location" inverseEntity="Taxi"/>
+    </entity>
+    <entity name="Taxi" representedClassName=".Taxi" syncable="YES">
+        <attribute name="group" optional="YES" attributeType="String"/>
+        <attribute name="imgUrl" optional="YES" attributeType="String"/>
+        <attribute name="modelID" optional="YES" attributeType="String"/>
+        <attribute name="modelName" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="uniqueID" optional="YES" attributeType="String"/>
+        <attribute name="vehicleNumber" optional="YES" attributeType="String"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="location" inverseEntity="Location"/>
+        <relationship name="taxiDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TaxiDetails" inverseName="taxi" inverseEntity="TaxiDetails"/>
+    </entity>
+    <entity name="TaxiDetails" representedClassName=".TaxiDetails" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="String"/>
+        <attribute name="fuelLevel" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="fuelType" optional="YES" attributeType="String"/>
+        <attribute name="make" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="series" optional="YES" attributeType="String"/>
+        <attribute name="transmission" optional="YES" attributeType="String"/>
+        <relationship name="taxi" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Taxi" inverseName="taxiDetails" inverseEntity="Taxi"/>
+    </entity>
+    <elements>
+        <element name="Taxi" positionX="-63" positionY="-18" width="128" height="178"/>
+        <element name="TaxiDetails" positionX="-54" positionY="0" width="128" height="163"/>
+        <element name="Location" positionX="-36" positionY="9" width="128" height="88"/>
+    </elements>
+</model>
