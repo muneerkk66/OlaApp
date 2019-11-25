@@ -5,6 +5,7 @@ target 'OlaApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'Alamofire', '~> 4.4'
+  pod 'SDWebImage', '~> 5.0'
   pod 'FittedSheets'
   # Pods for CurrencyConvertor
 

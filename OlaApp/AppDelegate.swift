@@ -10,12 +10,20 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var rootNavigationVC : UINavigationController = UINavigationController()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //setSplashVideoAsRoot()
         return true
+    }
+    
+    //MARK:-  Show Splash screen
+    func setSplashVideoAsRoot() {
+        let onboardingStoryboard : UIStoryboard = UIStoryboard(name:StoryboardName.main.rawValue, bundle: Bundle.main)
+        let splashVideoVC  = onboardingStoryboard.instantiateViewController(withIdentifier: StoryboardIdentifier.splashVCID.rawValue)
+        rootNavigationVC.setViewControllers([splashVideoVC], animated: true)
     }
 
     // MARK: UISceneSession Lifecycle

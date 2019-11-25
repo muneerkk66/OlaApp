@@ -7,6 +7,8 @@
 //
 import Foundation
 import UIKit
+
+let appDelegate = UIApplication.shared.delegate as! AppDelegate
 class OlaAppConstants: NSObject {
     
      //MARK:- URL & API details
@@ -27,7 +29,16 @@ class OlaAppConstants: NSObject {
     static let screenHeight        = UIScreen.main.bounds.size.height
     static let screenWidth         = UIScreen.main.bounds.size.width
 
+    //MARK: Resources
+    static let placeholderImage    = "car.png"
     
+    //MARK: MapView
+    static let latitudeDelta       = 0.02
+    static let longitudeDelta      = 0.02
+    
+    //MARK:- SplashVideo
+    static let videofileName       = "ola"
+    static let videofiletype       = "mp4"
 
    
 }

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0840C6CD238C24890006E8EA /* TaxiMapViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840C6CC238C24890006E8EA /* TaxiMapViewVC.swift */; };
+		0840C6D1238C69DA0006E8EA /* ola.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0840C6D0238C69DA0006E8EA /* ola.mp4 */; };
+		0840C6D3238C6BB10006E8EA /* SplashVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840C6D2238C6BB10006E8EA /* SplashVM.swift */; };
+		08B60852238AC0CD00907D5B /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B60851238AC0CD00907D5B /* CustomLabel.swift */; };
+		08B60854238AC53500907D5B /* SplashVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B60853238AC53500907D5B /* SplashVideoVC.swift */; };
 		08DDD11E2388362700A4A606 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD11D2388362700A4A606 /* AppDelegate.swift */; };
 		08DDD1202388362700A4A606 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDD11F2388362700A4A606 /* SceneDelegate.swift */; };
 		08DDD1252388362700A4A606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DDD1232388362700A4A606 /* Main.storyboard */; };
@@ -60,6 +65,11 @@
 
 /* Begin PBXFileReference section */
 		0685D30D1795C43CE419B5F8 /* Pods-OlaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OlaApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-OlaApp/Pods-OlaApp.release.xcconfig"; sourceTree = "<group>"; };
+		0840C6CC238C24890006E8EA /* TaxiMapViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiMapViewVC.swift; sourceTree = "<group>"; };
+		0840C6D0238C69DA0006E8EA /* ola.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ola.mp4; sourceTree = "<group>"; };
+		0840C6D2238C6BB10006E8EA /* SplashVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVM.swift; sourceTree = "<group>"; };
+		08B60851238AC0CD00907D5B /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		08B60853238AC53500907D5B /* SplashVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVideoVC.swift; sourceTree = "<group>"; };
 		08DDD11A2388362700A4A606 /* OlaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OlaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DDD11D2388362700A4A606 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08DDD11F2388362700A4A606 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +153,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0840C6CE238C699C0006E8EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0840C6D0238C69DA0006E8EA /* ola.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		08DDD1112388362700A4A606 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +186,7 @@
 		08DDD11C2388362700A4A606 /* OlaApp */ = {
 			isa = PBXGroup;
 			children = (
+				0840C6CE238C699C0006E8EA /* Resources */,
 				08DDD187238842D100A4A606 /* NetWorkManager */,
 				08DDD17223883F3D00A4A606 /* Views */,
 				08DDD14F2388365500A4A606 /* ViewController */,
@@ -221,6 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				08DDD16423883AB200A4A606 /* TaxiListVC.swift */,
+				08B60853238AC53500907D5B /* SplashVideoVC.swift */,
+				0840C6CC238C24890006E8EA /* TaxiMapViewVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -278,6 +299,7 @@
 			children = (
 				08DDD16A23883BBD00A4A606 /* TaxiListVM.swift */,
 				08DDD15D23883A5F00A4A606 /* BaseVM.swift */,
+				0840C6D2238C6BB10006E8EA /* SplashVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -286,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				08DDD1752388408F00A4A606 /* TaxiTableViewCell.swift */,
+				08B60851238AC0CD00907D5B /* CustomLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -431,6 +454,7 @@
 				08DDD12A2388362A00A4A606 /* LaunchScreen.storyboard in Resources */,
 				08DDD1272388362A00A4A606 /* Assets.xcassets in Resources */,
 				08DDD1252388362700A4A606 /* Main.storyboard in Resources */,
+				0840C6D1238C69DA0006E8EA /* ola.mp4 in Resources */,
 				08DDD1852388410E00A4A606 /* OlaAppLicense.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,11 +485,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-OlaApp/Pods-OlaApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FittedSheets/FittedSheets.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FittedSheets.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -499,11 +525,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-OlaApp-OlaAppUITests/Pods-OlaApp-OlaAppUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FittedSheets/FittedSheets.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FittedSheets.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -560,6 +588,8 @@
 				08DDD11E2388362700A4A606 /* AppDelegate.swift in Sources */,
 				08DDD1B12388503900A4A606 /* Taxi+CoreDataProperties.swift in Sources */,
 				08DDD1912388496300A4A606 /* OlaApp.xcdatamodeld in Sources */,
+				08B60852238AC0CD00907D5B /* CustomLabel.swift in Sources */,
+				0840C6D3238C6BB10006E8EA /* SplashVM.swift in Sources */,
 				08DDD1762388408F00A4A606 /* TaxiTableViewCell.swift in Sources */,
 				08DDD1B02388503900A4A606 /* Taxi+CoreDataClass.swift in Sources */,
 				08DDD16323883A5F00A4A606 /* BaseVM.swift in Sources */,
@@ -567,10 +597,12 @@
 				08DDD16123883A5F00A4A606 /* BaseAPIHandler.swift in Sources */,
 				08DDD16923883B6500A4A606 /* TaxiListAPIHandler.swift in Sources */,
 				08DDD16F23883C2200A4A606 /* Taxi.swift in Sources */,
+				08B60854238AC53500907D5B /* SplashVideoVC.swift in Sources */,
 				08DDD1842388410E00A4A606 /* OlaAppExtensions.swift in Sources */,
 				08DDD16723883B1F00A4A606 /* TaxiListDataHandler.swift in Sources */,
 				08DDD1832388410E00A4A606 /* OlaAppConstants.swift in Sources */,
 				08DDD1892388430500A4A606 /* NetworkManager.swift in Sources */,
+				0840C6CD238C24890006E8EA /* TaxiMapViewVC.swift in Sources */,
 				08DDD1202388362700A4A606 /* SceneDelegate.swift in Sources */,
 				08DDD1B22388503900A4A606 /* TaxiDetails+CoreDataClass.swift in Sources */,
 				08DDD1862388410E00A4A606 /* OlaAppEnum.swift in Sources */,

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import MapKit
 class TaxiListVM :BaseVM {
     var apiHandler:TaxiListAPIHandler = TaxiListAPIHandler()
     var dataHandler:TaxiListDataHandler = TaxiListDataHandler()
@@ -39,10 +40,19 @@ class TaxiListVM :BaseVM {
                        
         }
     }
+    
     //MARK:- Method that returns list of saved Taxi Ojects
-
     func loadTaxiList() -> [Taxi] {
         return dataHandler.loadAllTaxiDetails()
+    }
+    
+    //MARK:- Method that returns Annonations list from Location objects
+    func getAnnotations(from locations:[Location]) -> [MKAnnotation] {
+        return dataHandler.getAnnotations(from: locations)
+    }
+    //MARK:- Method that returns Region
+    func getRegion(from locations:[Location]) -> MKCoordinateRegion? {
+        return dataHandler.getRegion(from: locations)
     }
        
 }

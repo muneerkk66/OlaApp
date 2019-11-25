@@ -7,4 +7,9 @@
 //
 import UIKit
 import Foundation
+extension UIColor {
+    class func defaultBackgroundColor() -> UIColor {
+        return UIColor(red: 255.0/255.0, green: 170.0/255.0, blue: 29.0/255.0, alpha: 1.0)
+    }
+}
 

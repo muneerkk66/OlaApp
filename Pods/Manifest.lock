@@ -1,20 +1,26 @@
 PODS:
   - Alamofire (4.9.0)
   - FittedSheets (1.4.5)
+  - SDWebImage (5.2.2):
+    - SDWebImage/Core (= 5.2.2)
+  - SDWebImage/Core (5.2.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
   - FittedSheets
+  - SDWebImage (~> 5.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - FittedSheets
+    - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   FittedSheets: 7f754c9f6fb4ea330cbc57c652b594255f2a6819
+  SDWebImage: 5fcdb02cc35e05fc35791ec514b191d27189f872
 
-PODFILE CHECKSUM: 08ad431e2cc3aefbeb98a14f43969c514ca18016
+PODFILE CHECKSUM: e9007e2dfe23a257a6185c818ac2e0be439769b8
 
 COCOAPODS: 1.5.2

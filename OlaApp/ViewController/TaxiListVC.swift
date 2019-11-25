@@ -5,7 +5,7 @@
 //  Created by Muneer KK on 22/11/19.
 //  Copyright © 2019 Muneer KK. All rights reserved.
 //
-
+import FittedSheets
 import UIKit
 private typealias TaxiListVCTableViewMethods = TaxiListVC
 private typealias Constants = TaxiListVC
@@ -27,6 +27,7 @@ class TaxiListVC: UIViewController {
     //MARK:- This will load the Taxi details from Coredata
     fileprivate func showLoadedTaxiDetails() {
         taxiListVM.taxiList = taxiListVM.loadTaxiList()
+        taxiListTableView.reloadData()
     }
      //MARK:- API CALL to fetch the latest Taxi details
     fileprivate func loadAllTaxiDetails(){
@@ -39,9 +40,20 @@ class TaxiListVC: UIViewController {
             }
             else {
                 weakSelf.showLoadedTaxiDetails()
+                
             }
         })
     }
+    @IBAction func mapViewPressed() {
+       
+        let onboardingStoryboard : UIStoryboard = UIStoryboard(name:StoryboardName.main.rawValue, bundle: Bundle.main)
+        let mapViewVC  = onboardingStoryboard.instantiateViewController(withIdentifier: StoryboardIdentifier.taxiMapVCID.rawValue) as! TaxiMapViewVC
+        mapViewVC.taxiListVM = taxiListVM
+        let controller = SheetViewController(controller: mapViewVC, sizes: [.fixed(OlaAppConstants.screenHeight), .fullScreen])
+        
+        self.present(controller, animated: true, completion: nil)
+
+     }
 
 
 }
@@ -75,6 +87,6 @@ extension TaxiListVCTableViewMethods:UITableViewDelegate, UITableViewDataSource 
 //MARK: - Tableview Constants
 extension Constants {
     struct Constants {
-        static let rowHeight:CGFloat = 60.0
+        static let rowHeight:CGFloat = 120.0
     }
 }

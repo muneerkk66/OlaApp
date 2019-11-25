@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "501F8FB2EBA9EE64993905931AD89B8D"
+               BlueprintIdentifier = "9C3161B09B0669354B2341F2AC7C4F7C"
                BlueprintName = "Pods-OlaApp-OlaAppUITests"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pods-OlaApp-OlaAppUITests.framework">
